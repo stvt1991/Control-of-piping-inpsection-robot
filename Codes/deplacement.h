@@ -40,7 +40,7 @@
 #define DUTY_AR 100000      //Duty pour 20% --> 13000 tr/min
 
 //Autres variable
-#define seuil_B 240
+#define seuil_B 420
 #define seuil_H 1500
 typedef struct struct_robot struct_robot;
 struct struct_robot {
