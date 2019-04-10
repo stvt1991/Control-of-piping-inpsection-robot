@@ -1,5 +1,7 @@
-#© 01/03/2019- Swaminath Venkateswaran, Damien Chablat, Mathieu Poréz, Frédéric Boyer 
-# Le LS2N, Centrale Nantes
+/*
+ *#© 01/03/2019- Swaminath Venkateswaran, Damien Chablat, Mathieu Poréz, Frédéric Boyer 
+ *# Le LS2N, Centrale Nantes
+ */
 
 /*
  *  adc.h
