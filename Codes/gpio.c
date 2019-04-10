@@ -1,4 +1,9 @@
 /*
+ *#© 01/03/2019- Swaminath Venkateswaran, Damien Chablat, Mathieu Poréz, Frédéric Boyer 
+ *# Le LS2N, Centrale Nantes
+ */
+
+/*
  *  gpio.c
  *  
  *
@@ -14,12 +19,12 @@ void set_gpio(const char * dev, const char * reg, int val)       // dev et reg? 
 	static char file[64];
 	sprintf(file,"%s/%s",dev,reg);
 	fd = open(file,O_RDWR);          // Ouverture du fichier de la BBB contenant la Pin voulue
-	if (strcmp (reg, DIRECTION)==0) // regarde si la pin configur�, ici elle ne l'est pas donc  il le fait lui, 
+	if (strcmp (reg, DIRECTION)==0) // regarde si la pin configuré, ici elle ne l'est pas donc  il le fait lui, 
 	{
 		switch (val) 
 		{
 			case 0:
-				len = sprintf(buff,GPIO_IN);  // sprintf " renvoi une chaine de carat�re. Len est la taille
+				len = sprintf(buff,GPIO_IN);  // sprintf " renvoi une chaine de caratére. Len est la taille
 				break;
 			case 1:
 				len = sprintf(buff,GPIO_OUT);
