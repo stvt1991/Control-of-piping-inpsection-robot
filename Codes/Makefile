@@ -1,3 +1,6 @@
+#© 01/03/2019- Swaminath Venkateswaran, Damien Chablat, Mathieu Poréz, Frédéric Boyer 
+# Le LS2N, Centrale Nantes
+
 CC = gcc
 EXEC = slide
 CFLAGS = -lpthread -lrt -DBB_BLACK   
