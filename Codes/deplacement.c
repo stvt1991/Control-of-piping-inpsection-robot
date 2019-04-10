@@ -1,4 +1,9 @@
 /*
+ *#Â© 01/03/2019- Swaminath Venkateswaran, Damien Chablat, Mathieu PorÃ©z, FrÃ©dÃ©ric Boyer 
+ *# Le LS2N, Centrale Nantes
+ */
+
+/*
  *  deplacement.c
  *  
  *
@@ -10,7 +15,7 @@
 #include "adc.h"	
 #include "utile.h"
 
-//Fonctions de déplacemnt :
+//Fonctions de dÃ©placemnt :
 
 void initialisation (struct_robot *Robot)
 {
@@ -24,7 +29,7 @@ void initialisation (struct_robot *Robot)
 	set_gpio(enable_M1,DIRECTION,1); // 1 = "out"
 	set_gpio(enable_M1,VALUE,0); // 1 --> enable
 	set_gpio(sens_M1,DIRECTION,1); // 1 = "out"
-	set_gpio(sens_M1,VALUE,0); // 0 à gauche, 1 à droite
+	set_gpio(sens_M1,VALUE,0); // 0 Ã  gauche, 1 Ã  droite
 	printf("fin init M1\n");
 	(*Robot).m1=0;
 	
@@ -38,7 +43,7 @@ void initialisation (struct_robot *Robot)
 	set_gpio(enable_M2,DIRECTION,1); // 1 = "out"
 	set_gpio(enable_M2,VALUE,0); // 1 --> enable
 	set_gpio(sens_M2,DIRECTION,1); // 1 = "out"
-	set_gpio(sens_M2,VALUE,0); // 0 à gauche, 1 à droite
+	set_gpio(sens_M2,VALUE,0); // 0 Ã  gauche, 1 Ã  droite
 	printf("fin init M2\n");
 	(*Robot).m2=0;
 	
@@ -52,7 +57,7 @@ void initialisation (struct_robot *Robot)
 	set_gpio(enable_M3,DIRECTION,1); // 1 = "out"
 	set_gpio(enable_M3,VALUE,0); // 1 --> enable
 	set_gpio(sens_M3,DIRECTION,1); // 1 = "out"
-	set_gpio(sens_M3,VALUE,0); // 0 à gauche, 1 à droite
+	set_gpio(sens_M3,VALUE,0); // 0 Ã  gauche, 1 Ã  droite
 	printf("fin init M3\n");
 	(*Robot).m3=0;
 	sleep(3);
@@ -71,7 +76,7 @@ void initialisation (struct_robot *Robot)
   {
 	return get_adc(adc_M3);
  }
-//fonction qui se charge de déclamper les pattes avants
+//fonction qui se charge de dÃ©clamper les pattes avants
 void clamp_AV (struct_robot *Robot)
 {
 	printf("Fonction clampe AVANT\n");
@@ -154,7 +159,7 @@ void declamp_AV_Dcst (struct_robot *Robot)
 	printf("Fin declamp AV\n\n");
 }
 
-//fonction qui se charge de déclamper les pattes ar
+//fonction qui se charge de dÃ©clamper les pattes ar
 void clamp_AR (struct_robot *Robot)
 {
 	printf("\nFonction clampe AR\n");
@@ -295,7 +300,7 @@ void allong (struct_robot *Robot)
 
 int avance (int nbpas,struct_robot *Robot)
 {
-	//function de déplacement avant.
+	//function de dÃ©placement avant.
 	int i;
 	//initialisation (ETAT);
 	sleep(1);
@@ -327,7 +332,7 @@ int avance (int nbpas,struct_robot *Robot)
 
 int recule(int nbpas,struct_robot *Robot)
 {
-	//function de déplacement arriere, il n'y a que l'ordre des déclamp qui change.
+	//function de dÃ©placement arriere, il n'y a que l'ordre des dÃ©clamp qui change.
 	int i;
 	sleep(3);
 	for(i=1;i<=nbpas;i++)
