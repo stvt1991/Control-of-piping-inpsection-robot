@@ -17,8 +17,6 @@
 #include "gpio.h"
 #include "adc.h"
 #include "deplacement.h"
-#include "eqep.h"
-#include "utile.h"
 
 struct_robot Robot;
 
