@@ -21,11 +21,8 @@
 
 /* Devices */
 #define GPIO_31 "/sys/class/gpio/gpio31/"
-#define GPIO_30 "/sys/class/gpio/gpio30/"
 #define GPIO_47 "/sys/class/gpio/gpio47/"
-#define GPIO_27 "/sys/class/gpio/gpio27/"
 #define GPIO_68 "/sys/class/gpio/gpio68/"
-#define GPIO_67 "/sys/class/gpio/gpio67/"
 
 /* Registers */
 #define ACTIVE_LOW "active_low"
