@@ -19,23 +19,19 @@
 #include "pwm.h"
 #include "gpio.h"
 #include "adc.h"
-#include "utile.h"
 
 //define des noms de pin:
 //Pour le motor 1 :
 #define pwm_M1 EHRPWM1A
 #define enable_M1 GPIO_31
-#define sens_M1 GPIO_30
 #define adc_M1 AIN0
 //Pour le motor 2 :
 #define pwm_M2 EHRPWM2B
 #define enable_M2 GPIO_47
-#define sens_M2 GPIO_27
 #define adc_M2 AIN1
 //Pour le motor 2 :
 #define pwm_M3 EHRPWM0A
 #define enable_M3 GPIO_68
-#define sens_M3 GPIO_67
 #define adc_M3 AIN2
 
 //Variable PWM:
